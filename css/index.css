@@ -24,29 +24,9 @@ header {
 
 }
 
-.header-top__list li {
-   padding: 0 10px 0 0;
-}
-
-.logo {}
-
-.logo__link {}
-
-.logo__link-image {}
-
-.personal {}
-
-.personal__list {
-   display: flex;
-}
-
 .personal__list li {
    padding: 0 10px 0 0;
 }
-
-.line {}
-
-.social {}
 
 .social__list {
    display: flex;
@@ -61,22 +41,9 @@ header {
    padding: 60px 0 0 0;
 }
 
-.smoothies__title {}
-
-.smoothies__decription {}
-
-.features {}
-
 .features__items {
    display: flex;
 }
-
-.features__item {}
-
-.features__item-img {}
-
-.features__item-text {}
-
 
 section.about {
    background-color: #12816b;
@@ -89,86 +56,19 @@ section.about {
    display: flex;
 }
 
-.products__item {}
-
-.products__item-image {}
-
-.products__item-title {}
-
-.products__item-mesure {}
-
-.products__item-button {}
-
-
 .story {
    display: flex;
 }
-
-.story__description {}
-
-.story__description-title {}
-
-.story__description-article {}
-
-.story__description-button {}
-
-.story__images {}
-
-.testimonials {
-   background-color: #673118;
-}
-
-.testimonials__title {}
-
-.testimonials__title-name {}
-
-.testimonials__inner {
-   display: flex;
-}
-
-.testimonials__comment {}
-
-.testimonials__comment-article {}
-
-.testimonials__comment-author {}
-
-.testimonials__image {}
-
-.arrows {}
-
-
-.blog {}
-
-.blog__title {}
 
 .blog__inner {
    display: flex;
 }
 
-.blog__image {}
-
-.blog__description {}
-
-.blog__description-title {}
-
-
-
-
-.instagram {}
-
-.instagram__user {}
-
-.instagram__user-link {}
-
 .instagram__image-items {
    display: flex;
 }
 
-.instagram__image-item {}
 
-.instagram__image {}
-
-.instagram__image-icon {}
 
 footer {
    background-color: rgba(68, 207, 121, 0.562);
