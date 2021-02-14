@@ -141,9 +141,8 @@ a {
    width: 40px;
    height: 40px;
    position: absolute;
-   top: 41%;
-   left: 211px;
-
+   top: 39%;
+   right: 40px;
 }
 
 /* Стилизирую  блок Header */
@@ -192,29 +191,33 @@ a {
 
 /* Стилизирую блок smoothies*/
 /* Стилизирую блок about*/
+
 .about {
+   padding: 70px 0 0 0;
    display: flex;
+   width: 1920px;
+   margin: 0 auto;
+   position: relative;
    background-color: #13876c;
 }
 
-.about__inner {
-   padding: 70px 0 0 0;
-   display: flex;
-   margin: 0 auto;
-
+.about__image-wrap {
+   flex: 0 1 50%;
 }
 
-.about__image {}
-
-.about__image-item {
-   margin: 0 120px 0 0;
+.about__image {
+   position: absolute;
+   top: 180px;
+   left: 200px;
 }
 
-.about__description {}
+.about__description {
+   margin: 0px 0 0 0px;
+}
 
 .about__title {
    font-size: 55px;
-   max-width: 560pxgi;
+   max-width: 560px;
 }
 
 .about__description-mark {
@@ -229,10 +232,7 @@ a {
    position: absolute;
    background: url(/assets/images/About/icons/Line.png) no-repeat;
    top: 57px;
-   left: 137px;
-
-
-
+   left: 165px;
 }
 
 .about__list {
@@ -265,20 +265,31 @@ a {
 
 
 .about__btn {
-   margin: 50px 0 0px 10px;
-   font-size: 24px;
+   margin: 50px 0 94px 10px;
+
    width: 380px;
    height: 60px;
-   border-radius: 40px;
+
    -webkit-border-radius: 40px;
    -moz-border-radius: 40px;
    -ms-border-radius: 40px;
    -o-border-radius: 40px;
-   border: 4px solid #aaa247;
-   background-color: #16866b;
-   color: rgb(255, 255, 255);
+
+
    position: relative;
 
+}
+
+.btn {
+   border: 4px solid #aaa247;
+   border-radius: 40px;
+   font-size: 24px;
+   color: rgb(255, 255, 255);
+   background-color: #16866b;
+   margin: 50px 0 94px 10px;
+
+   width: 380px;
+   height: 60px;
 }
 
 .about__btn::after {
@@ -290,9 +301,355 @@ a {
    position: absolute;
    top: 17px;
    right: -15px;
+}
+
+/* Стилизирую блок about*/
+/* Стилизирую блок products*/
+
+.products__items {
+   display: flex;
 
 }
 
-.btn {}
+.products__item {
+   flex: 0 1 25%;
+   text-align: center;
 
-/* Стилизирую блок about*/
+}
+
+.products__item--purpure {
+   background-color: #652c18;
+}
+
+.products__item-btn--purpure {
+   background-color: #652c18;
+
+}
+
+.products__item--green,
+.products__item-btn--green {
+   background-color: #17826e;
+}
+
+.products__item--yellow,
+.products__item-btn--yellow {
+   background-color: #f5b23f;
+}
+
+.products__item--red,
+.products__item-btn--red {
+   background-color: #c54618;
+}
+
+.products__item-image {
+   padding: 130px 0 0 0;
+}
+
+.products__item-title {
+   padding: 40px 0 0 0;
+}
+
+.products__item-mesure {
+   padding: 20px 0 0 0;
+}
+
+.products__item-btn {
+   margin: 65px 0 80px 0;
+   width: 200px;
+   height: 60px;
+   border: 2px solid #ffffff;
+   border-radius: 40px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   -ms-border-radius: 40px;
+   -o-border-radius: 40px;
+   color: #ffff;
+   position: relative;
+}
+
+.products__item-btn:after {
+   content: " ";
+   width: 60px;
+   height: 60px;
+   background: url(/assets/images/products/arrow.png) no-repeat;
+   position: absolute;
+   top: 20px;
+   right: 7px;
+
+}
+
+/* Стилизирую блок products*/
+/*Стилизирую блок Story*/
+.story {
+   margin: 125px 0 0 0;
+   width: 1300px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.story__description {
+   padding: 140px 0 0 0;
+
+}
+
+.story__description-title {
+   font-size: 50px;
+   color: #f7ae3b;
+}
+
+.story__description-text {
+   font-size: 18px;
+   padding: 95px 0 0 0;
+   max-width: 500px;
+}
+
+.story__description-btn {
+   background-color: #0aa566;
+   position: relative;
+}
+
+.story__description-btn:after {
+   content: " ";
+   width: 60px;
+   height: 60px;
+   background: url(/assets/images/about/icons/arrow.png) no-repeat;
+   position: absolute;
+   display: inline-block;
+   top: 20px;
+   right: 20px;
+
+
+
+
+}
+
+
+.story__image-wrap {
+   position: relative;
+   margin: 125px 0 0 0;
+}
+
+.story__image-wrap:before {
+   content: " ";
+   width: 300px;
+   height: 290px;
+   background: url(/assets/images/story/Stamp.png) no-repeat;
+   display: inline-block;
+   position: absolute;
+   top: 30px;
+   left: -145px;
+}
+
+.story__image-wrap:after {
+   content: " ";
+   width: 415px;
+   height: 305px;
+   background: url(/assets/images/story/Dots.png) no-repeat;
+   display: inline-block;
+   position: absolute;
+   bottom: -383px;
+   right: -190px;
+}
+
+
+
+/*Стилизирую блок Story*/
+
+/*Стилизирую блок testimonialls*/
+.testimonials {
+   background-color: #682c19;
+   margin: 165px 0 0 0;
+   padding: 120px 0 0 0;
+   text-align: center;
+}
+
+.testimonials__title {
+   font-size: 50px;
+   color: #f7ae3b;
+
+}
+
+.testimonials__title-word {
+   font-size: 50px;
+   color: #f2612d;
+}
+
+.testimonials__inner {
+   max-width: 730px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   padding: 130px 0 0 0;
+   position: relative;
+   z-index: 2;
+}
+
+.testimonials__inner::after {
+   content: "Sarah A";
+   position: absolute;
+   top: 55px;
+   left: -100px;
+   font-size: 200px;
+   color: #59210f;
+   z-index: -1;
+
+}
+
+.testimonials__comment {
+   padding: 65px 0 0 0;
+   font-size: 18px;
+   max-width: 465px;
+   color: rgb(255, 255, 255);
+
+}
+
+.comment-qoute {}
+
+.comment-author {
+   padding: 40px 0 0 0;
+   font-size: 18px;
+   color: #f7ae3b;
+}
+
+.testimonials__image {
+   display: inline-block;
+}
+
+.arrows {
+   padding: 110px 0 100px 0;
+   max-width: 160px;
+   display: flex;
+   margin: 0 auto;
+   justify-content: space-between;
+}
+
+/*Стилизирую блок testimonialls*/
+/*Стилизирую Блок Blog*/
+.blog {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.blog__title {
+   font-size: 50px;
+   color: #f7ae3b;
+}
+
+.blog__inner {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+
+.blog__image {
+   padding: 0 30px 0 0;
+}
+
+.blog__description {
+   padding: 0 0 0 30px;
+}
+
+.blog__description-title {
+   margin: 134px 0 0 0;
+   color: #f2612d;
+   font-size: 30px;
+
+}
+
+.blog__description-title::after {
+   content: "";
+   position: absolute;
+   top: 85px;
+   left: 554px;
+   width: 647px;
+   height: 13px;
+   background-color: #f7ae3b;
+}
+
+.blog__description-date {
+   font-size: 16px;
+}
+
+.blog__description-text {
+   margin: 50px 0 0 65px;
+   font-size: 18px;
+   max-width: 412px;
+
+}
+
+.blog__description-text-link {
+   font-size: 18px;
+   font-weight: bold;
+   color: rgba(0, 0, 0, 0.973);
+   position: relative;
+}
+
+.blog__description-text-link::after {
+   content: " ";
+   width: 60px;
+   height: 60px;
+   background: url(/assets/images/about/icons/arrow.png) no-repeat;
+   position: absolute;
+   top: 3px;
+   left: 96px;
+}
+
+/*Стилизирую Блок Blog*/
+/*Стилизирую Блок Instagram*/
+.instagram {
+   text-align: center;
+   margin: 203px 0 0 0;
+   500px: 980px;
+
+
+}
+
+.instagram__user-link {
+   font-size: 24px;
+   line-height: 40px;
+   color: #7dc5a1;
+   position: relative;
+
+}
+
+.instagram__user-logo::before {
+   content: " ";
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   background: url(/assets/images/instagram/icon.png) no-repeat;
+   top: 1px;
+   left: -38px;
+
+}
+
+.instagram__image-items {
+   display: flex;
+}
+
+.instagram__image-item {
+   position: relative;
+   z-index: -10;
+   display: inline-block;
+}
+
+.instagram__image-item::after {
+   content: "  ";
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   background: url(/assets/images/instagram/icon-white.png) no-repeat;
+   bottom: -13px;
+   right: -11px;
+   z-index: 2;
+}
+
+.instagram__image {
+   position: relative;
+   z-index: -10;
+   display: inline-block;
+}
+
+
+/*Стилизирую Блок Instagram*/
