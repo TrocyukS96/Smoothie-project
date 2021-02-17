@@ -22,9 +22,12 @@ html {
  * Remove the margin in all browsers.
  */
 
-body {
+* {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
 
 /**
  * Render the `main` element consistently in IE.
@@ -82,6 +85,12 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+
 }
 
 /**
