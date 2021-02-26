@@ -1008,35 +1008,51 @@ body {
    font-family: 'Muli-bold';
    font-size: 16px;
    line-height: 40px;
-   letter-spacing: -0, 32;
    color: rgb(255, 255, 255);
-}
-
-.hug::before {
-   content: " Go top";
-   color: rgb(255, 255, 255);
-   position: absolute;
-   right: 116px;
-   top: -2px;
-
 }
 
 .hug__link {
    background-color: rgb(242, 102, 47);
    width: 50px;
    height: 50px;
-   display: inline-block;
-   position: absolute;
-   right: 50px;
-   top: -29px;
-
+   margin-right: 5px;
 }
 
 .hug__link-img {
-   position: absolute;
-   right: 18px;
-   top: 14px;
+   position: relative;
+}
 
+
+.hug {
+   display: flex;
+}
+
+.hug__text {
+   position: absolute;
+   bottom: 0;
+   right: 87px;
+
+
+}
+
+.hug__arrow {
+   position: fixed;
+   bottom: 15px;
+   right: 18px;
+
+
+}
+
+.hug__arrow-link {
+   background-color: rgb(242, 102, 47);
+   width: 50px;
+   height: 50px;
+   display: block;
+}
+
+.hug__arrow-img {
+   vertical-align: center;
+   padding-top: 12px;
 }
 
 /*Стилизирую Блок Footer*/
