@@ -11,46 +11,51 @@
 </head>
 
 <body>
-    <!-- Здесь будет структура документа -->
-    <header class="header">
-        <div class="header__top">
-            <nav class="header__nav menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item"><a class="menu__list-link" href="">HOME</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="">SHOP</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="">STORY</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="">ABOUT</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="">BLOG</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="">TESTIMONIALS</a></li>
-                </ul>
-            </nav>
+<header class="header">
+    <div class="conteiner">
+        <div class="header__body">
+            <div class="header__burger burger__menu">
+                <span class="burger__span"></span>
+            </div>
+            <div class="header__novigation">
+                <div class="header__left">
+                    <div class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="" class="menu__list-link">home</a></li>
+                            <li class="menu__list-item"><a href="" class="menu__list-link">shop</a></li>
+                            <li class="menu__list-item"><a href="" class="menu__list-link">story</a></li>
+                            <li class="menu__list-item"><a href="" class="menu__list-link">about</a></li>
+                            <li class="menu__list-item"><a href="" class="menu__list-link">blog</a></li>
+                            <li class="menu__list-item"><a href="" class="menu__list-link">testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <div class="header__personal personal">
+                        <ul class="personal__list">
+                            <li class="personal__list-item"><a href="#" class="personal__list-link"><img src="/assets/images/personal/search-icon.png" alt="" class="personal__list-img"></a></li>
+                            <li class="personal__list-item"><a href="#" class="personal__list-link"><img src="/assets/images/personal/user.png" alt="" class="personal__list-img"></a></li>
+                            <li class="personal__list-item personal__list-item--numb"><a href="#" class="personal__list-link"><img src="/assets/images/personal/cart-icon.png" alt="" class="personal__list-img"></a></li>
+                        </ul>
+                    </div>
+                    <div class="header__social social">
+                        <ul class="social__list">
+                            <li class="social__list-item"><a href="#" class="social__list-link"><img src="/assets/images/social/facebook-icon.png" alt="" class="social__list-img"></a></li>
+                            <li class="social__list-item"><a href="#" class="social__list-link"><img src="/assets/images/social/pinterest.png" alt="" class="social__list-img"></a></li>
+                            <li class="social__list-item"><a href="#" class="social__list-link"><img src="/assets/images/social/instagram-icon.png" alt="" class="social__list-img"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="logo">
-                <a class="logo__link" href="" >
-                    <img class="logo__img" src="/assets/images/logo/logo.png" alt="logo-image">
-                </a>
+            <img src="/assets/images/logo/logo.png" alt="" class="logo__img">
             </div>
-            <div class="header__right-block">
-                <div class="personal">
-                    <ul class="personal__list">
-                        <li class="personal__list-item"><a class="personal__list-link" href=""><img class="personal__list-img"  src="/assets/images/personal/search-icon.png" alt="Search-icon"></a></li>
-                        <li class="personal__list-item"><a class="personal__list-link" href=""><img class="personal__list-img"  src="/assets/images/personal/user.png" alt="User-icon"></a></li>
-                        <li class="personal__list-item"><a class="personal__list-link personal__list-number" href=""> <img class="personal__list-img"  src="/assets//images/personal/cart-icon.png" alt="Cart-icon"></a></li>
-                    </ul>
-                </div>
-                <div class="social">
-                    <ul class="social__list">
-                        <li class="social__list-item"><a class="social__list-link" href=""><img class="social__list-img" src="/assets/images/social/instagram-icon.png" alt="Instagram-icon"></a></li>
-                        <li class="social__list-item"><a class="social__list-link" href=""><img class="social__list-img" src="/assets/images/social/pinterest.png" alt="Pinterest-icon"></a></li>
-                        <li class="social__list-item"><a class="social__list-link" href=""><img class="social__list-img" src="/assets/images/social/facebook-icon.png" alt="Facebook-icon"></a></li>
-                    </ul>
-                </div>
+            <div class="header__shop">
+                <button class="header__btn btn">Shop Now</button>
             </div>
         </div>
-        <div class="header__content">
-            <button class="header__btn btn">Shop Now</button>
-        </div>
-        
-    </header>
+    </div>
+</header>
 
     <section class="smoothies">
         <h1 class="smoothies__title">What are these smoothies</h1>
@@ -258,5 +263,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html
