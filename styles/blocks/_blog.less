@@ -1,0 +1,125 @@
+// main: ./../main.less
+.blog {
+   max-width: 1200px;
+   text-align: left;
+   margin: 0 auto;
+
+   @media (max-width: 1027px) {
+      text-align: center;
+   }
+
+   &__title {
+      font-size: 50px;
+      color: #f7ae3b;
+      font-family: 'Muli-ExtraBold';
+      padding: 99px 0 45px 0;
+
+      @media (max-width: 1027px) {
+         padding: 20px 0 0 0;
+      }
+   }
+
+   &__inner {
+      display: flex;
+      margin-bottom: 202px;
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: center;
+      margin-bottom: 202px;
+
+      @media (max-width: 1027px) {
+         flex-direction: column-reverse;
+         position: relative;
+         max-width: 1200px;
+         margin: 0 auto;
+         align-items: center;
+         margin-bottom: 50px;
+      }
+   }
+}
+
+
+&__description {
+   text-align: left;
+   margin-left: 61px;
+
+}
+
+&__description-title {
+   color: #f2612d;
+   font-size: 30px;
+   margin: 132px 0 20px 0px;
+   font-family: 'Muli-ExtraBold';
+
+   @media (max-width: 1027px) {
+      margin: 40px 0 14px 0px;
+   }
+
+   &::after {
+      content: "";
+      position: absolute;
+      top: 70px;
+      left: 554px;
+      width: 647px;
+      height: 13px;
+      background-color: #f7ae3b;
+
+      @media (max-width: 1027px) {
+         display: none;
+      }
+   }
+
+}
+
+&__description-date {
+   font-size: 16px;
+   line-height: 35px;
+   margin-bottom: 45px;
+
+   @media (max-width: 1027px) {
+      font-size: 16px;
+      line-height: 35px;
+      margin-bottom: 10px;
+   }
+
+}
+
+&__description-text {
+   margin: 0 0 0 63px;
+   font-size: 18px;
+   max-width: 426px;
+   line-height: 35px;
+
+   @media (max-width: 1027px) {
+      margin: 0;
+      font-size: 18px;
+      max-width: 510px;
+      line-height: 35px;
+      text-align: left;
+   }
+}
+
+&__description-text-word {
+   font-family: 'Muli-ExtraBold';
+   font-size: 18px;
+   line-height: 35px;
+}
+
+&__description-text-link {
+   font-size: 18px;
+   font-weight: bold;
+   color: rgba(0, 0, 0, 0.973);
+   position: relative;
+
+   &::after {
+      content: " ";
+      width: 60px;
+      height: 60px;
+      background: url(/assets/images/about/icons/arrow.png) no-repeat;
+      position: absolute;
+      top: 3px;
+      left: 103px;
+   }
+}
+}

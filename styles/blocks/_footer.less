@@ -1,0 +1,86 @@
+// main: ./../main.less
+.footer {
+
+   .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-color: rgb(243, 143, 56);
+      justify-content: space-around;
+      padding: 79px 0 93px 0;
+
+      @media(max-width:1027px) {
+         display: flex;
+         flex-wrap: wrap;
+         padding: 20px 0 10px 0;
+      }
+   }
+
+   .footer-logo {
+      width: 207px;
+      height: 68px;
+      padding-top: 54px;
+
+      @media(max-width:1027px) {
+         display: none;
+      }
+   }
+
+   .footer-social {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 262px;
+      margin: 28px 0 0 185px;
+
+      @media(max-width:1027px) {
+         max-width: 220px;
+      }
+   }
+
+   .footer-social__title {
+      width: 120px;
+      position: relative;
+      font-family: 'Muli-ExtraBold';
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: -0, 36;
+
+      &::before {
+         content: " ";
+         width: 48px;
+         height: 48px;
+         background: url(/assets/images/subscribe/arrow-botton.png) no-repeat;
+         position: absolute;
+         top: -26px;
+         left: -66px;
+      }
+   }
+
+   .footer-social__list {
+      display: flex;
+   }
+
+   .footer-social__list-item {
+      padding-right: 16px;
+
+      &:last-child {
+         padding-right: 0px;
+      }
+   }
+
+   .footer__bottom {
+      background-color: rgb(113, 48, 28);
+      max-height: 61px;
+      text-align: center;
+      position: relative;
+      font-size: 13px;
+      line-height: 35px;
+   }
+
+   .footer__botton-text {
+      font-size: 13px;
+      line-height: 35px;
+      color: rgb(166, 126, 116);
+   }
+}

@@ -1,0 +1,110 @@
+// main: ./../main.less
+.story {
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+
+      @media (max-width: 1027px) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   &__description {
+      padding: 140px 170px 0 0px;
+
+      @media (max-width: 1027px) {
+         padding: 28px 0 0 0;
+      }
+   }
+
+   &__description-title {
+      font-size: 50px;
+      color: #f7ae3b;
+      font-family: 'Muli-ExtraBold';
+      line-height: 40px;
+      padding-bottom: 43px;
+
+      @media (max-width: 1027px) {
+         padding-bottom: 20px;
+      }
+   }
+
+   &__description-text {
+      font-size: 18px;
+      max-width: 500px;
+      line-height: 35px;
+
+   }
+
+   &__description-btn {
+      background-color: #0aa566;
+      position: relative;
+      width: 301px;
+      height: 60px;
+      border: 2px solid #ffffff;
+      margin-top: 60px;
+      font-family: 'Muli-ExtraBold';
+      font-size: 21px;
+
+      @media (max-width: 1027px) {
+         margin-top: 30px;
+      }
+
+      &:after {
+         content: " ";
+         width: 60px;
+         height: 60px;
+         background: url(/assets/images/about/icons/arrow.png) no-repeat;
+         position: absolute;
+         display: inline-block;
+         top: 20px;
+         right: 20px;
+      }
+   }
+
+   .story__image-wrap {
+      position: relative;
+      margin: 125px 0 0 0;
+      padding-bottom: 160px;
+      width: 100%;
+
+      @media (max-width: 1027px) {
+         position: relative;
+         margin: 50px 0 0 0;
+         padding-bottom: 30px;
+      }
+
+      &:before {
+         content: " ";
+         width: 300px;
+         height: 290px;
+         background: url(/assets/images/story/Stamp.png) no-repeat;
+         display: inline-block;
+         position: absolute;
+         top: 30px;
+         left: -145px;
+
+         @media (max-width: 1027px) {
+            display: none;
+         }
+      }
+
+      &:after {
+         content: " ";
+         width: 415px;
+         height: 305px;
+         background: url(/assets/images/story/Dots.png) no-repeat;
+         display: inline-block;
+         position: absolute;
+         bottom: -195px;
+         right: -208px;
+
+         @media (max-width: 1027px) {
+            display: none;
+         }
+      }
+   }
+}

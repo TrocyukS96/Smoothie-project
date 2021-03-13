@@ -81,6 +81,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+
 }
 
 .menu__list {
@@ -251,7 +252,6 @@
       height: 20px;
       cursor: pointer;
       z-index: 20;
-
    }
 
    .burger__menu.active::before {
@@ -261,6 +261,7 @@
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       top: 9px;
+
    }
 
    .burger__menu.active::after {
@@ -270,6 +271,7 @@
       -ms-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
       bottom: 9px;
+
    }
 
 
@@ -286,10 +288,12 @@
       -moz-transition: all 0.3s ease 0s;
       -ms-transition: all 0.3s ease 0s;
       -o-transition: all 0.3s ease 0s;
+      z-index: 20;
    }
 
    .burger__menu.active span {
       display: none;
+
    }
 
    .burger__menu::before,
@@ -300,6 +304,7 @@
       position: absolute;
       left: 0;
       background-color: rgb(4, 173, 252);
+      z-index: 20;
    }
 
    .burger__menu::before {
@@ -328,6 +333,7 @@
 
    .header__novigation.active {
       top: 0;
+
    }
 
    .header__right {
@@ -359,7 +365,6 @@
 
    .logo {
       top: 100px;
-
    }
 
    .header__btn {
@@ -375,9 +380,7 @@
    }
 
    .header__shop {
-
       top: 530px;
-
    }
 }
 
@@ -593,7 +596,7 @@
    .about__image {
       position: static;
       max-width: 612px;
-      max-height: 710px;
+      max-height: 640px;
       top: 106px;
       right: 33px;
    }
@@ -602,7 +605,40 @@
       margin: 40px 0 0 7px;
       font-size: 26px;
    }
+
+   .about__btn {
+      margin: 45px 0 45px 10px;
+   }
 }
+
+@media (max-width: 767px) {
+   .about__image {
+      max-height: 520px;
+   }
+
+   .about__title {
+      width: 450px;
+      font-size: 36px;
+   }
+
+   .about__list {
+      margin: 30px 0 0 0;
+      color: rgb(255, 255, 255);
+      position: relative;
+      font-family: 'Muli-ExtraBold';
+      color: rgb(255, 255, 255);
+      position: relative;
+      font-family: 'Muli-ExtraBold';
+      line-height: 17px;
+   }
+
+   .about__description-mark::after {
+      width: 397px;
+   }
+
+
+}
+
 
 /* Стилизирую блок about*/
 /* Стилизирую блок products*/
@@ -868,7 +904,7 @@
    position: absolute;
    bottom: 3%;
    margin: -33px 15px 0px 15px;
-   z-index: 10;
+   z-index: 7;
    font-size: 0;
    width: 30px;
    height: 20px;
@@ -936,6 +972,7 @@
    display: inline-block;
    position: relative;
    z-index: 21;
+   width: 100%;
 }
 
 
@@ -950,16 +987,25 @@
       font-size: 50px;
    }
 
-   .testimonials__inner {
+   .testimonials__slider-item {
       max-width: 700px;
-      padding: 58px 0 0 0;
-
+      padding: 58px 0 30px 0;
       flex-direction: column-reverse;
       align-items: center;
    }
 
-   .testimonials__inner::after {
+   .testimonials__slider-item::after {
       display: none;
+   }
+
+   .comment-author {
+      padding: 10px 0 12px 0;
+   }
+
+   .slider .slick-arrow {
+      bottom: 2%;
+      margin: -33px 15px 0px 15px;
+      font-size: 0;
    }
 
    .testimonials__comment {
@@ -1176,8 +1222,8 @@
 
 .footer-top {
    display: flex;
-   justify-content: center;
-   align-items: center;
+   justify-content: space-between;
+   align-items: flex-start;
    background-color: rgb(243, 143, 56);
    justify-content: space-around;
    padding: 79px 0 93px 0;
@@ -1194,7 +1240,6 @@
 .information__title {
    font-family: 'Muli-ExtraBold';
    font-size: 26px;
-   line-height: 0px;
    letter-spacing: -0, 52;
    padding-bottom: 40px;
    color: #fff;
@@ -1237,10 +1282,16 @@
    color: rgb(255, 255, 255);
 }
 
-.payment__image-wrap {}
+.payment__image-wrap {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 0 0 0;
+}
 
 .payment__image {
-   margin-bottom: 29px;
+   margin: 17px 12px 0px 0;
+   min-width: 0;
+
 }
 
 .subscription {}
@@ -1415,7 +1466,6 @@
    .footer-top {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
       padding: 20px 0 10px 0;
    }
 
@@ -1435,7 +1485,7 @@
    }
 
    .subscription {
-      padding-top: 30px;
+      padding: 10px 0px 0px 25px;
    }
 
    .subscription__title {
@@ -1449,6 +1499,28 @@
 
    .footer-social {
       max-width: 220px;
+   }
+
+
+   .subscription__input {
+      width: 430px;
+      height: 61px;
+      font-family: 'Muli-Bold';
+      font-size: 17px;
+      line-height: 35px;
+      letter-spacing: -0.34px;
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      -ms-border-radius: 40px;
+      -o-border-radius: 40px;
+      padding: 5px 46px 3px 59px;
+      height: 60px;
+      border-radius: 40px;
+      border-style: none;
+   }
+
+   .input-icon {
+      left: 0%;
    }
 }
 

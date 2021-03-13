@@ -1,0 +1,94 @@
+// main: ./../main.less
+.products {
+   &__items {
+      display: flex;
+
+      @media (max-width: 1027px) {
+         flex-wrap: wrap;
+      }
+   }
+
+   &__item {
+      flex: 1 1 25%;
+      text-align: center;
+      margin: 0;
+      font-family: 'Muli-Bold';
+      font-size: 24px;
+      color: #ffffff;
+
+      @media (max-width: 1027px) {
+         flex: 1 1 50%;
+         font-size: 27px;
+      }
+   }
+
+   &__item--purpure,
+   &__item-btn--purpure {
+      background-color: #652c18;
+   }
+
+   &__item--green,
+   &__item-btn--green {
+      background-color: #17826e;
+   }
+
+   &__item--yellow,
+   &__item-btn--yellow {
+      background-color: #f5b23f;
+   }
+
+   &__item--red,
+   &__item-btn--red {
+      background-color: #c54618;
+   }
+
+   &__item-image {
+      padding: 130px 0 0 0;
+
+      @media (max-width: 1027px) {
+         padding: 60px 0 0 0;
+      }
+   }
+
+   &__item-title {
+      padding: 40px 0 0 0;
+
+      @media (max-width: 1027px) {
+         padding: 40px 0 0 0;
+      }
+   }
+
+   &__item-mesure {
+      padding: 20px 0 0 0;
+   }
+
+   &__item-btn {
+      margin: 65px 0 80px 0;
+      width: 200px;
+      height: 60px;
+      border: 2px solid #ffffff;
+      border-radius: 40px;
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      -ms-border-radius: 40px;
+      -o-border-radius: 40px;
+      color: #ffff;
+      position: relative;
+      font-family: 'Muli-ExtraBold';
+      font-size: 21px;
+
+      &:after {
+         content: " ";
+         width: 60px;
+         height: 60px;
+         background: url(/assets/images/products/arrow.png) no-repeat;
+         position: absolute;
+         top: 20px;
+         right: 7px;
+      }
+
+      @media (max-width: 1027px) {
+         margin: 40px 0 40px 0;
+      }
+   }
+}

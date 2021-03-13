@@ -1,0 +1,66 @@
+// main: ./../main.less
+
+.instagram {
+   text-align: center;
+   margin-bottom: 10px;
+
+   &__user-link {
+      font-size: 24px;
+      line-height: 40px;
+      color: #7dc5a1;
+      position: relative;
+      font-family: 'Muli-ExtraBold';
+      margin-bottom: 45px;
+   }
+
+   &__user-logo::before {
+      content: " ";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      background: url(/assets/images/instagram/icon.png) no-repeat;
+      top: 1px;
+      left: -38px;
+   }
+
+   &__image-items {
+      display: flex;
+      margin: 45px 0 0 0;
+
+      @media (max-width: 1027px) {
+         display: flex;
+         flex-wrap: wrap;
+         margin: 20px 0 0 0;
+         justify-content: center;
+      }
+   }
+
+   &__image-item {
+      flex: 1 1 25%;
+      text-align: center;
+      margin: 0;
+      position: relative;
+      z-index: -10;
+
+      @media (max-width: 1027px) {
+         flex: 0 1 50%;
+      }
+
+      &::after {
+         content: "  ";
+         width: 60px;
+         height: 60px;
+         position: absolute;
+         background: url(/assets/images/instagram/icon-white.png) no-repeat;
+         bottom: -13px;
+         right: -11px;
+         z-index: 2;
+      }
+   }
+
+   &__image {
+      position: relative;
+      z-index: -10;
+      display: inline-block;
+   }
+}
