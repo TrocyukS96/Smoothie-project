@@ -2,6 +2,10 @@
 .payment {
    max-width: 236px;
 
+   @media(max-width:470px) {
+      margin: 10px 0 0 113px;
+   }
+
    .payment__title {
       font-family: 'Muli-ExtraBold';
       font-size: 26px;
@@ -9,6 +13,11 @@
       letter-spacing: -0, 52;
       padding-bottom: 32px;
       color: rgb(255, 255, 255);
+
+      @media (max-width: 790px) {
+         padding-bottom: 20px;
+         font-size: 24px;
+      }
    }
 
    .payment__image-wrap {

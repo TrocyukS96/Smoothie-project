@@ -6,6 +6,11 @@
       letter-spacing: -0, 52;
       padding-bottom: 40px;
       color: #fff;
+
+      @media (max-width: 790px) {
+         padding-bottom: 14px;
+         font-size: 24px;
+      }
    }
 
    &__list {
@@ -13,10 +18,18 @@
       font-size: 18px;
       line-height: 35px;
       color: #6d450c;
+
+      @media (max-width: 790px) {
+         font-size: 15px;
+      }
    }
 
    &__list-item {
       padding-bottom: 10px;
+
+      @media (max-width: 790px) {
+         padding-bottom: 4px;
+      }
 
       &:last-child {
          padding-bottom: 0px;

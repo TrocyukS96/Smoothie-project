@@ -1,7 +1,5 @@
 // main: ./../main.less
 .slider {
-
-
    .slick-slider {
       min-width: 0;
    }
@@ -35,13 +33,45 @@
 
    .slick-arrow.slick-prev {
 
-      left: 45%;
+      left: 48%;
       background: url('/assets/images/testimonials/arrow-left .png') 0 0 / 100% no-repeat;
+
+      @media (max-width: 1027px) {
+         left: 43%;
+      }
+
+      @media (max-width: 790px) {
+         left: 42%;
+      }
+
+      @media (max-width: 630px) {
+         left: 40%;
+      }
+
+      @media (max-width: 490px) {
+         left: 36%;
+      }
    }
 
    .slick-arrow.slick-next {
-      right: 45%;
+      right: 48%;
       background: url('/assets/images/testimonials/arrow-right .png') 0 0 / 100% no-repeat;
+
+      @media (max-width: 1027px) {
+         right: 43%;
+      }
+
+      @media (max-width: 790px) {
+         right: 42%;
+      }
+
+      @media (max-width: 630px) {
+         right: 40%;
+      }
+
+      @media (max-width: 490px) {
+         right: 36%;
+      }
    }
 
    .slick-arrow.slick-disabled {
@@ -49,13 +79,14 @@
    }
 
    .slider-item {
-      max-width: 820px;
+      max-width: 715px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       padding: 118px 0 100px 0;
       position: relative;
       z-index: 2;
+
 
       &::after {
          content: "Sarah A";
@@ -76,10 +107,15 @@
       }
 
       @media (max-width: 1027px) {
-         max-width: 700px;
          padding: 58px 0 30px 0;
          flex-direction: column-reverse;
          align-items: center;
+         flex: 1 1 auto;
+      }
+
+      @media (max-width: 790px) {
+
+         padding: 38px 0 30px 0;
       }
    }
 }

@@ -12,7 +12,12 @@
       @media(max-width:1027px) {
          display: flex;
          flex-wrap: wrap;
-         padding: 20px 0 10px 0;
+         padding: 10px 0 10px 0;
+      }
+
+      @media(max-width:470px) {
+         display: block;
+         text-align: center;
       }
    }
 
@@ -36,6 +41,10 @@
       @media(max-width:1027px) {
          max-width: 220px;
       }
+
+      @media(max-width:520px) {
+         margin: 12px 0 0 94px;
+      }
    }
 
    .footer-social__title {
@@ -54,6 +63,10 @@
          position: absolute;
          top: -26px;
          left: -66px;
+
+         @media(max-width:520px) {
+            display: none;
+         }
       }
    }
 

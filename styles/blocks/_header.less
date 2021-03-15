@@ -6,19 +6,23 @@
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
+
    &__body {
       position: relative;
       padding: 69px 0 0 0;
    }
+
    &__novigation {
       display: flex;
       justify-content: space-between;
       align-items: center;
    }
+
    &__right {
       display: flex;
       align-items: center;
    }
+
    .logo {
       position: absolute;
       top: 65px;
@@ -28,10 +32,12 @@
       -moz-transform: translate(-50%);
       -ms-transform: translate(-50%);
       -o-transform: translate(-50%);
+
       &__img {
          max-width: 100%;
       }
    }
+
    &__shop {
       position: absolute;
       top: 246px;
@@ -42,6 +48,7 @@
       -ms-transform: translate(-50%);
       -o-transform: translate(-50%);
    }
+
    &__btn {
       width: 280px;
       height: 70px;
@@ -53,6 +60,7 @@
       text-align-last: left;
       position: relative;
       border-style: none;
+
       &::after {
          content: " ";
          width: 30px;
@@ -62,13 +70,14 @@
          top: 27px;
          right: 27px;
       }
-   }     
+   }
 }
 
 @media (max-width: 1024px) {
    .header__body {
       padding: 30px 0 0 0;
    }
+
    .header__novigation {
       flex-direction: column-reverse;
       position: fixed;
@@ -96,9 +105,11 @@
    .header__left {
       padding-bottom: 178px;
    }
+
    .logo {
       top: 100px;
    }
+
    .header__btn {
       width: 280px;
       height: 70px;
@@ -113,5 +124,18 @@
 
    .header__shop {
       top: 530px;
+   }
+}
+
+@media (max-width:530px) {
+   .header__btn {
+      width: 240px;
+      height: 55px;
+      font-size: 22px;
+   }
+
+   .header__btn::after {
+      top: 24px;
+      right: 47px;
    }
 }

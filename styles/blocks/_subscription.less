@@ -2,6 +2,11 @@
 .subscription {
    @media(max-width:1027px) {
       padding: 10px 0px 0px 25px;
+
+   }
+
+   @media(max-width:790px) {
+      text-align: left;
    }
 
    &__title {
@@ -13,12 +18,21 @@
       color: rgb(255, 255, 255);
 
       @media(max-width:1027px) {
-         font-family: 'Muli-ExtraBold';
          font-size: 26px;
          line-height: 35px;
-         letter-spacing: -0, 52;
          padding: 20px 0 17px 0;
-         color: rgb(255, 255, 255);
+      }
+
+      @media(max-width:790px) {
+         font-size: 24px;
+         line-height: 14px;
+         padding: 14px 0px 15px 118px;
+      }
+
+      @media(max-width:470px) {
+         font-size: 24px;
+         line-height: 14px;
+         padding: 14px 0px 15px 118px;
       }
    }
 
@@ -41,29 +55,19 @@
       @media(max-width:1027px) {
          width: 430px;
          height: 61px;
-         font-family: 'Muli-Bold';
-         font-size: 17px;
-         line-height: 35px;
-         letter-spacing: -0.34px;
-         -webkit-border-radius: 40px;
-         -moz-border-radius: 40px;
-         -ms-border-radius: 40px;
-         -o-border-radius: 40px;
-         padding: 5px 46px 3px 59px;
-         height: 60px;
-         border-radius: 40px;
-         border-style: none;
+      }
+
+      @media(max-width:470px) {
+         width: 394px;
+         height: 58px;
       }
    }
+
 
    &__input-icon {
       position: relative;
       top: 3px;
       left: -470px;
-
-      @media(max-width:1027px) {
-         left: 0%;
-      }
 
       ::-webkit-input-placeholder {
          color: #6d450c;
@@ -85,6 +89,14 @@
       :-ms-input-placeholder {
          color: #6d450c;
          font-size: 17px;
+      }
+
+      @media(max-width:1027px) {
+         left: -416px;
+      }
+
+      @media(max-width:470px) {
+         left: -380px;
       }
    }
 }

@@ -15,8 +15,11 @@
       padding: 99px 0 45px 0;
 
       @media (max-width: 1027px) {
-         padding: 20px 0 0 0;
+         padding: 20px 0 10px 0;
+         font-size: 40px;
       }
+
+
    }
 
    &__inner {
@@ -35,91 +38,139 @@
          margin: 0 auto;
          align-items: center;
          margin-bottom: 50px;
+         padding: 0 15px;
       }
    }
-}
 
 
-&__description {
-   text-align: left;
-   margin-left: 61px;
 
-}
 
-&__description-title {
-   color: #f2612d;
-   font-size: 30px;
-   margin: 132px 0 20px 0px;
-   font-family: 'Muli-ExtraBold';
-
-   @media (max-width: 1027px) {
-      margin: 40px 0 14px 0px;
-   }
-
-   &::after {
-      content: "";
-      position: absolute;
-      top: 70px;
-      left: 554px;
-      width: 647px;
-      height: 13px;
-      background-color: #f7ae3b;
+   &__description {
+      text-align: left;
+      margin-left: 61px;
 
       @media (max-width: 1027px) {
-         display: none;
+         margin-left: 0;
+      }
+
+      @media (max-width: 380px) {
+         text-align: center;
       }
    }
 
-}
+   &__description-title {
+      color: #f2612d;
+      font-size: 30px;
+      margin: 132px 0 20px 0px;
+      font-family: 'Muli-ExtraBold';
 
-&__description-date {
-   font-size: 16px;
-   line-height: 35px;
-   margin-bottom: 45px;
+      @media (max-width: 1027px) {
+         margin: 40px 0 14px 0px;
+         font-size: 27px;
+      }
 
-   @media (max-width: 1027px) {
+      @media (max-width: 590px) {
+         margin: 5px 0 14px 0px;
+         text-align: center;
+         font-size: 22px;
+      }
+
+      &::after {
+         content: "";
+         position: absolute;
+         top: 70px;
+         left: 554px;
+         width: 647px;
+         height: 13px;
+         background-color: #f7ae3b;
+
+         @media (max-width: 1027px) {
+            display: none;
+         }
+      }
+
+   }
+
+   &__image {
+      max-width: 555px;
+      max-height: 400px;
+
+      @media (max-width: 590px) {
+         max-width: 467px;
+         max-height: 312px;
+      }
+
+      @media (max-width: 420px) {
+         max-width: 370px;
+         max-height: 251px;
+      }
+   }
+
+   &__description-date {
       font-size: 16px;
       line-height: 35px;
-      margin-bottom: 10px;
+      margin-bottom: 45px;
+
+      @media (max-width: 1027px) {
+         font-size: 16px;
+         line-height: 35px;
+         margin-bottom: 10px;
+      }
+
    }
 
-}
-
-&__description-text {
-   margin: 0 0 0 63px;
-   font-size: 18px;
-   max-width: 426px;
-   line-height: 35px;
-
-   @media (max-width: 1027px) {
-      margin: 0;
+   &__description-text {
+      margin: 0 0 0 63px;
       font-size: 18px;
-      max-width: 510px;
+      max-width: 426px;
       line-height: 35px;
-      text-align: left;
+
+      @media (max-width: 1027px) {
+         margin: 0;
+         font-size: 18px;
+         max-width: 510px;
+         line-height: 35px;
+         text-align: left;
+      }
+
+      @media (max-width: 590px) {
+         font-size: 16px;
+         max-width: 398px;
+         line-height: 30px;
+      }
+
+      @media (max-width: 380px) {
+         font-size: 15px;
+         max-width: 289px;
+         line-height: 25px;
+      }
    }
-}
 
-&__description-text-word {
-   font-family: 'Muli-ExtraBold';
-   font-size: 18px;
-   line-height: 35px;
-}
-
-&__description-text-link {
-   font-size: 18px;
-   font-weight: bold;
-   color: rgba(0, 0, 0, 0.973);
-   position: relative;
-
-   &::after {
-      content: " ";
-      width: 60px;
-      height: 60px;
-      background: url(/assets/images/about/icons/arrow.png) no-repeat;
-      position: absolute;
-      top: 3px;
-      left: 103px;
+   &__description-text-word {
+      font-family: 'Muli-ExtraBold';
+      font-size: 18px;
+      line-height: 35px;
    }
-}
+
+   &__description-text-link {
+      font-size: 18px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.973);
+      position: relative;
+
+      &::after {
+         content: " ";
+         width: 60px;
+         height: 60px;
+         background: url(/assets/images/about/icons/arrow.png) no-repeat;
+         position: absolute;
+         top: 3px;
+         left: 103px;
+
+         @media (max-width: 590px) {
+            left: 98px;
+         }
+      }
+
+   }
 }
