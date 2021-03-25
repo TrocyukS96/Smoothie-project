@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/styles/main.min.css">
     <!-- Сюда подключаем стили -->
@@ -51,7 +52,7 @@
             <img src="/assets/images/logo/logo.png" alt="" class="logo__img">
             </div>
             <div class="header__shop">
-                <button class="header__btn btn">Shop Now</button>
+                <button  class=" header__btn btn" data-aos="zoom-in-up">Shop Now</button>
             </div>
         </div>
     </div>
@@ -103,7 +104,7 @@
         <div class="conteiner">
             <div class="about__body">
                 <div class="about__image-wrap">
-                    <img class="about__image" src="/assets/images/about/img.png" alt="Smoothie">
+                    <img class="about__image" data-tilt data-tilt-glare data-tilt-max-glare="0.8" src="/assets/images/about/img.png" alt="Smoothie">
                 </div>
                 <div class="about__description">
                     <h2 class="about__title">What makes Smoothie <span class="about__description-mark">an awesome drink?</span>  </h2>
@@ -117,7 +118,7 @@
                         <li class="about__list-item">Gluten-Free & Grain-Free</li>
                         <li class="about__list-item">Corn-Free & Soy-Free</li>
                     </ul>
-                    <a href="#" class="about__btn btn">About Organic Smoothie</a>
+                    <a href="#"data-aos="zoom-in-left" class="wow fadeInDown about__btn btn " data-wow-offset="300">About Organic Smoothie</a>
                 </div>
             </div>
         </div>
@@ -125,25 +126,25 @@
     <section class="products">
         <div class="products__items">
             <figure class="products__item products__item--purpure">
-                <img class="products__item-image " src="/assets/images/products/img1.png" alt="Dark Chocolate Smoothie" >
+                <img  class="products__item-image " src="/assets/images/products/img1.png" alt="Dark Chocolate Smoothie" >
                 <h5 class="products__item-title">Dark Chocolate Smoothie</h5>
                 <div class="products__item-mesure">100 ml</div>
                 <button class="products__item-btn btn products__item-btn--purpure">Buy</button>
             </figure>
             <figure class="products__item products__item--green ">
-                <img class="products__item-image" src="/assets/images/products/img2.png" alt="Vegan Lettuce Smoothie" >
+                <img data-tilt data-tilt-reset="false" class="products__item-image" src="/assets/images/products/img2.png" alt="Vegan Lettuce Smoothie" >
                 <h5 class="products__item-title">Vegan Lettuce Smoothie</h5>
                 <div class="products__item-mesure">100 ml</div>
                 <button class="products__item-btn btn products__item-btn--green">Buy</button>
             </figure>
             <figure class="products__item products__item--yellow">
-                <img class="products__item-image" src="/assets/images/products/img3.png" alt="Lemon Ginger Smoothie" >
+                <img data-tilt data-tilt-reset="false" class="products__item-image" src="/assets/images/products/img3.png" alt="Lemon Ginger Smoothie" >
                 <h5 class="products__item-title">Lemon Ginger Smoothie</h5>
                 <div class="products__item-mesure">100 ml</div>
                 <button class="products__item-btn btn products__item-btn--yellow">Buy</button>
             </figure>
             <figure class="products__item products__item--red ">
-                <img class="products__item-image" src="/assets/images/products/img4.png" alt="Lemon Ginger Smoothie" >
+                <img data-tilt data-tilt-reset="false" class="products__item-image" src="/assets/images/products/img4.png" alt="Lemon Ginger Smoothie" >
                 <h5 class="products__item-title">Turmeric Garlic Smoothie</h5>
                 <div class="products__item-mesure">100 ml</div>
                 <button class="products__item-btn btn products__item-btn--red">Buy</button>
@@ -156,10 +157,10 @@
                 <div class="story__description">
                     <h2 class="story__description-title">Our story</h2>
                     <p class="story__description-text">As products typically using raw fruits or vegetables, smoothies include dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake. </p>
-                    <button class="story__description-btn btn">Who we are</button>
+                    <button data-aos="zoom-out-down" class=" story__description-btn btn" >Who we are</button>
                 </div>
                 <div class="story__image-wrap">
-                    <img class="story__image"src="/assets/images/story/image.jpg" alt="Our ingredients">
+                    <img  class="story__image"src="/assets/images/story/image.jpg" alt="Our ingredients">
                 </div>
             </div>
         </div>
@@ -172,7 +173,7 @@
                         <q class="comment-qoute">”Smoothie is great. I don't know what else to say. I will let my mum know about this, she could really make use of Smoothie! Smoothie saved my business.”</q>
                         <div class="comment-author">- from Santa Monica, CA</div>
                     </div>
-                    <img class="testimonials__image" src="/assets/images/testimonials/img.png" alt="consumer" >
+                    <img  class="testimonials__image" src="/assets/images/testimonials/img.png" alt="consumer" >
                 </div>
                 <div class="slider-item">
                     <div class="testimonials__comment comment">
@@ -200,7 +201,7 @@
     <section class="blog">
             <h2 class="blog__title">Our blog</h2>
             <div class="blog__inner">
-                <img class="blog__image" src="/assets/images/blog/img.jpg" alt="blog-img" >
+                <img data-tilt data-tilt-startX="20" data-tilt-startY="-20" class="blog__image" src="/assets/images/blog/img.jpg" alt="blog-img" >
                 <article class="blog__description">
                     <h3 class="blog__description-title">ASAFOETIDA - THE NEXT TURMERIC?</h3>
                     <p class="blog__description-date">Jun 16, 2020</p>
@@ -212,7 +213,7 @@
         </div>
     </section>
     <section class="instagram">
-        <a href="" class="instagram__user-link"> <span class="instagram__user-logo">ashasuperfoods</span> </a>
+        <a data-aos="fade-up" href="#" class="instagram__user-link "> <span class="instagram__user-logo">ashasuperfoods</span> </a>
         <div class="instagram__image-items">
             <figure class="instagram__image-item">
                 <img class="instagram__image" src="/assets/images/instagram/img1.jpg" alt="instagram__image" >
@@ -289,8 +290,25 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({
+        disable: function() {
+          var maxWidth =800; //размер экрана на котором отключается анимация/
+          return window.innerWidth < maxWidth;
+        }
+      });</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/slick.min.js"></script>
     <script src="/js/script.js"></script>
+    <script type="text/javascript" src="/libs/vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".your-element"), {
+		max: 25,
+		speed: 400
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".your-element"));
+</script>
 </body>
 </html
