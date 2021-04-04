@@ -2,8 +2,10 @@
 .products {
    &__items {
       display: flex;
+      max-width: 1920px;
+      margin: 0 auto;
 
-      @media (max-width: 1027px) {
+      @media (max-width: 1920px) {
          flex-wrap: wrap;
       }
    }
@@ -16,9 +18,14 @@
       font-size: 24px;
       color: #ffffff;
 
-      @media (max-width: 1027px) {
+      @media (max-width: 1920px) {
          flex: 1 1 50%;
          font-size: 27px;
+      }
+
+      @media (max-width: 767px) {
+         flex: 1 1 100%;
+         font-size: 30px;
       }
    }
 

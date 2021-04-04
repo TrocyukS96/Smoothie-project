@@ -1,22 +1,30 @@
 // main: ./../main.less
-.menu{
+.menu {
    &__list {
       display: flex;
-      @media (max-width: 1024px) {
+
+      @media (max-width: 1300px) {
          flex-direction: column;
          text-align: center;
          overflow: auto;
       }
    }
+
    &__list-item {
       padding: 0 20px 0 0;
+
+      @media (max-width: 1300px) {
+         padding: 0 0 0 0;
+      }
    }
+
    &__list-link {
       font-size: 16px;
       line-height: 2.5;
       letter-spacing: 0.32px;
       color: #ffffff;
       text-transform: uppercase;
+
       @media (max-width: 1024px) {
          font-size: 20px;
       }

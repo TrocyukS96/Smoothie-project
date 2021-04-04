@@ -8,8 +8,7 @@ $(document).ready(function() {
 		dots:false,
 		slidesToShow:1,
 		autoplay:false,
-		speed:3000,
-		autoplaySpeed:800,
+		speed:500,
 		responsive:[
 			{
 				breakpoint: 768,

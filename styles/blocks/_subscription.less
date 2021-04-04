@@ -9,6 +9,13 @@
       text-align: left;
    }
 
+   @media(max-width:420px) {
+      padding: 0;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+
    &__title {
       font-family: 'Muli-ExtraBold';
       font-size: 26px;
@@ -31,8 +38,10 @@
 
       @media(max-width:470px) {
          font-size: 24px;
-         line-height: 14px;
-         padding: 14px 0px 15px 118px;
+      }
+
+      @media(max-width:420px) {
+         padding: 8px 0 12px 0px;
       }
    }
 
@@ -58,8 +67,23 @@
       }
 
       @media(max-width:470px) {
-         width: 394px;
+         width: 310px;
          height: 58px;
+         margin: 0 0 0 40px;
+      }
+
+      @media(max-width:420px) {
+         width: 248px;
+         height: 50px;
+         margin: 0px 0 0 45px;
+         padding: 0 0 0 50px;
+      }
+
+      @media(max-width:321px) {
+         width: 239px;
+         height: 50px;
+         margin: 0px 0 0 8px;
+         padding: 0 0 0 50px;
       }
    }
 
@@ -95,8 +119,31 @@
          left: -416px;
       }
 
+      @media(max-width:490px) {
+         left: -410px;
+         top: 3px;
+      }
+
+      @media(max-width:490px) {
+         left: 17px;
+         top: -39px;
+      }
+
+
+
       @media(max-width:470px) {
-         left: -380px;
+         left: -296px;
+         top: 3px;
+      }
+
+      @media(max-width:420px) {
+         left: -239px;
+         top: 5px;
+      }
+
+      @media(max-width:350px) {
+         left: -237px;
+         top: 5px;
       }
    }
 }
