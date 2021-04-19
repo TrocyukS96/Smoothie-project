@@ -124,6 +124,18 @@ body.lock {
   .header__novigation.active {
     left: 0;
   }
+  .header__novigation.active .header__right {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header__novigation.active .header__left {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .header__right {
     padding-top: 200px;
   }
@@ -168,6 +180,11 @@ body.lock {
   .header__btn::after {
     top: 24px;
     right: 47px;
+  }
+}
+@media (max-width: 320px) {
+  .header__novigation.active .header__left {
+    top: 28%;
   }
 }
 @media (max-width: 1300px) {
@@ -261,6 +278,11 @@ body.lock {
     font-size: 20px;
   }
 }
+@media (max-width: 560px) {
+  .menu__list {
+    padding-top: 20px;
+  }
+}
 .personal {
   position: relative;
 }
@@ -337,6 +359,11 @@ body.lock {
 }
 .social__list-img {
   padding-top: 7px;
+}
+@media (max-width: 560px) {
+  .social__list {
+    margin-top: 15%;
+  }
 }
 .smoothies {
   text-align: center;

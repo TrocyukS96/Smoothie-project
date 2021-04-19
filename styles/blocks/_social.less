@@ -1,14 +1,17 @@
 // main: ./../main.less
-.social{
+.social {
    &__list {
       display: flex;
    }
+
    &__list-item {
       margin: 0 30px 0 0;
+
       &:last-child {
          margin: 0;
       }
    }
+
    &__list-link {
       width: 35px;
       height: 35px;
@@ -22,13 +25,14 @@
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
    }
+
    &__list-img {
       padding-top: 7px;
    }
 }
 
-
-
-
-
-
+@media (max-width:560px) {
+   .social__list {
+      margin-top: 15%;
+   }
+}

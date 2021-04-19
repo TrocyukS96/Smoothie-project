@@ -96,6 +96,23 @@
       left: 0;
    }
 
+   .header__novigation.active .header__right {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+
+   }
+
+   .header__novigation.active .header__left {
+      position: absolute;
+      top: 28%;
+      left: 50%;
+      transform: translateX(-50%);
+
+   }
+
+
    .header__right {
       padding-top: 200px;
    }
@@ -149,4 +166,13 @@
       top: 24px;
       right: 47px;
    }
+
+
+}
+
+@media (max-width:320px) {
+   .header__novigation.active .header__left {
+      top: 28%;
+   }
+
 }
