@@ -5,45 +5,53 @@
    margin-bottom: 10px;
 
    &__user-link {
+      margin-bottom: 45px;
+
+      font-family: 'Muli-ExtraBold';
       font-size: 24px;
       line-height: 40px;
+
       color: #7dc5a1;
+
       position: relative;
-      font-family: 'Muli-ExtraBold';
-      margin-bottom: 45px;
+
       transition: all 0.3s;
    }
 
    &__user-logo::before {
       content: " ";
+
       width: 60px;
       height: 60px;
+
       position: absolute;
-      background: url(/assets/images/instagram/icon.png) no-repeat;
       top: 1px;
       left: -38px;
+
+      background: url(/assets/images/instagram/icon.png) no-repeat;
    }
 
    &__image-items {
+      margin: 45px auto 0;
+
       display: flex;
-      display: flex;
-      margin: 45px auto 0 auto;
-      max-width: 1542px;
 
       @media (max-width: 1620px) {
+         max-width: 775px;
+
          display: flex;
          flex-wrap: wrap;
-         max-width: 775px;
 
       }
    }
 
    &__image-item {
+
       flex: 1 1 25%;
+
       text-align: center;
-      margin: 0;
+
       position: relative;
-      z-index: -10;
 
       @media (max-width: 1620px) {
          flex: 1 1 50%;
@@ -56,10 +64,13 @@
 
       &::after {
          content: "  ";
+
          width: 60px;
          height: 60px;
-         position: absolute;
+
          background: url(/assets/images/instagram/icon-white.png) no-repeat;
+
+         position: absolute;
          bottom: -13px;
          right: -11px;
          z-index: 2;
@@ -67,9 +78,11 @@
    }
 
    &__image {
-      position: relative;
-      z-index: -10;
       display: inline-block;
-      max-width: 100%;
+
+      width: 100%;
+
+      position: relative;
+
    }
 }
