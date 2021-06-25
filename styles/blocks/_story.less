@@ -70,6 +70,7 @@
 
       @media (max-width: 1027px) {
          margin-top: 30px;
+         margin-bottom: 20px;
       }
 
       @media (max-width: 370px) {
@@ -81,13 +82,15 @@
 
       &:after {
          content: " ";
-         width: 60px;
-         height: 60px;
-         background: url(/assets/images/about/icons/arrow.png) no-repeat;
+         width: 32px;
+         height: 18px;
+         background: url(../assets/images/about/icons/arrow.png) no-repeat;
          position: absolute;
          display: inline-block;
-         top: 20px;
-         right: 20px;
+         top: 50%;
+         right: 30px;
+
+         transform: translateY(-50%);
       }
    }
 
@@ -100,6 +103,7 @@
 
       @media (max-width: 1260px) {
          position: relative;
+         top: 50%;
          margin: 0;
          padding-bottom: 30px;
       }
@@ -123,7 +127,7 @@
          content: " ";
          width: 300px;
          height: 290px;
-         background: url(/assets/images/story/Stamp.png) no-repeat;
+         background: url(../assets/images/story/Stamp.png) no-repeat;
          display: inline-block;
          position: absolute;
          top: 30px;
@@ -140,7 +144,7 @@
          content: " ";
          width: 415px;
          height: 305px;
-         background: url(/assets/images/story/Dots.png) no-repeat;
+         background: url(../assets/images/story/Dots.png) no-repeat;
          display: inline-block;
          position: absolute;
          bottom: -195px;

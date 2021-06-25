@@ -55,6 +55,7 @@
 
       @media (max-width: 1270px) {
          margin-left: 0;
+         margin-bottom: 20px;
       }
 
       @media (max-width: 380px) {
@@ -139,7 +140,7 @@
 
       @media (max-width: 590px) {
          font-size: 16px;
-         max-width: 398px;
+         max-width: 320px;
          line-height: 30px;
       }
 
@@ -157,6 +158,8 @@
    }
 
    &__description-text-link {
+      display: inline-block;
+
       font-size: 18px;
       font-weight: bold;
       color: rgba(0, 0, 0, 0.973);
@@ -164,16 +167,16 @@
 
       &::after {
          content: " ";
-         width: 60px;
-         height: 60px;
-         background: url(/assets/images/about/icons/arrow.png) no-repeat;
+         width: 32px;
+         height: 16px;
+         background: url(../assets/images/about/icons/arrow.png) no-repeat;
          position: absolute;
-         top: 3px;
+         top: 50%;
+         transform: translateY(-50%);
          left: 103px;
+         right: 10px;
 
-         @media (max-width: 590px) {
-            left: 98px;
-         }
+
       }
 
    }

@@ -21,7 +21,7 @@
 
 .header {
    height: 100vh;
-   background: url(/assets/images/background/header-bg-img.jpg);
+   background: url(../assets/images/background/header-bg-img.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -81,10 +81,12 @@
          content: " ";
          width: 30px;
          height: 16px;
-         background: url(/assets/images/background/arrow.png) no-repeat;
+         background: url(../assets/images/background/arrow.png) no-repeat;
          position: absolute;
-         top: 27px;
+         top: 50%;
          right: 27px;
+
+         transform: translateY(-50%);
       }
    }
 }

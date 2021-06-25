@@ -102,7 +102,7 @@
          width: 450px;
          height: 15px;
          display: block;
-         background: url(/assets/images/About/icons/Line.png) no-repeat;
+         background: url(../assets/images/About/icons/Line.png) no-repeat;
 
          @media (max-width: 767px) {
             width: 397px;
@@ -164,7 +164,7 @@
          content: '';
          width: 60px;
          height: 60px;
-         background: url(/assets/images/About/icons/item.png) no-repeat;
+         background: url(../assets/images/About/icons/item.png) no-repeat;
          display: inline-block;
          position: absolute;
          left: -34px;
@@ -209,13 +209,15 @@
 
       &::after {
          content: " ";
-         width: 60px;
-         height: 60px;
-         background: url(/assets/images/About/icons/Arrow.png) no-repeat;
+         width: 32px;
+         height: 18px;
+         background: url(../assets/images/About/icons/Arrow.png) no-repeat;
          display: inline-block;
          position: absolute;
-         top: 17px;
-         right: -15px;
+         top: 50%;
+         right: 16px;
+
+         transform: translateY(-50%);
       }
    }
 }

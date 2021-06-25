@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="styles/main.min.css">
-    <!-- Сюда подключаем стили -->
+    <!-- Сюда подключаем стили -->  
     <title>Smoothie-project</title>
 </head>
 
 <body>
-    <header name="top" class="header">
+    <header name="top" class="header" id="header">
         <div class="conteiner">
             <div class="header__body">
                 <div class="header__burger burger__menu">
@@ -22,12 +22,12 @@
                     <div class="header__left">
                         <div class="header__menu menu">
                             <ul class="menu__list">
-                                <li class="menu__list-item"><a href="" class="menu__list-link">home</a></li>
-                                <li class="menu__list-item"><a href="" class="menu__list-link">shop</a></li>
-                                <li class="menu__list-item"><a href="" class="menu__list-link">story</a></li>
-                                <li class="menu__list-item"><a href="" class="menu__list-link">about</a></li>
-                                <li class="menu__list-item"><a href="" class="menu__list-link">blog</a></li>
-                                <li class="menu__list-item"><a href="" class="menu__list-link">testimonials</a></li>
+                                <li class="menu__list-item"><a href="#header" class="menu__list-link">home</a></li>
+                                <li class="menu__list-item"><a href="#instagram" class="menu__list-link">shop</a></li>
+                                <li class="menu__list-item"><a href="#story" class="menu__list-link">story</a></li>
+                                <li class="menu__list-item"><a href="#about" class="menu__list-link">about</a></li>
+                                <li class="menu__list-item"><a href="#blog" class="menu__list-link">blog</a></li>
+                                <li class="menu__list-item"><a href="#testimonials" class="menu__list-link">testimonials</a></li>
                             </ul>
                         </div>
                     </div>
@@ -40,9 +40,14 @@
                                 <li class="personal__list-item"><a href="#" class="personal__list-link"><img
                                             src="assets/images/personal/user.png" alt="" class="personal__list-img"></a>
                                 </li>
-                                <li class="personal__list-item personal__list-item--numb"><a href="#"
-                                        class="personal__list-link"><img src="assets/images/personal/cart-icon.png"
-                                            alt="" class="personal__list-img"></a></li>
+                                <li class="personal__list-item personal__list-item--numb">
+                                    <a href="#"
+                                        class="personal__list-link">
+                                        <img src="assets/images/personal/cart-icon.png"
+                                            alt="" class="personal__list-img">
+                                        </a>
+                                        <span class="personal__list-span">1</span>
+                                    </li>
                             </ul>
                         </div>
                         <div class="header__social social">
@@ -78,7 +83,7 @@
             as water, crushed ice, fruit juice, sweeteners (e.g. honey, sugar, stevia, or syrup), whey powder, plant
             milk, nuts, nut butter, seeds, tea, chocolate, herbal supplements, or nutritional supplements.
         </p>
-        <div class="features">
+        <div class="features" id="features">
             <div class="features__items">
                 <div class="features__item">
                     <img class="features__item-img" src="/assets/images/WhatAreTheSmoothies/icon1.png"
@@ -118,7 +123,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="conteiner">
             <div class="about__body">
                 <div class="about__image-wrap">
@@ -145,7 +150,7 @@
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
         <div class="products__items">
             <figure class="products__item products__item--purpure">
                 <img class="products__item-image " src="assets/images/products/img1.png" alt="Dark Chocolate Smoothie">
@@ -178,7 +183,7 @@
     </section>
 
 
-    <section class="story">
+    <section class="story" id="story">
         <div class="conteiner">
             <div class="story__body">
                 <div class="story__description">
@@ -196,7 +201,7 @@
     </section>
 
 
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <h2 class="testimonials__title">Why clients <span class="testimonials__title-word">LOVE </span>us?</h2>
         <div class="testimonials__slider slider">
             <div class="slider-item">
@@ -233,7 +238,7 @@
             </div>
         </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
         <h2 class="blog__title">Our blog</h2>
         <div class="blog__inner">
             <img data-tilt data-tilt-startX="20" data-tilt-startY="-20" class="blog__image"
@@ -251,7 +256,7 @@
         </div>
         </div>
     </section>
-    <section class="instagram">
+    <section class="instagram" id="instagram">
         <a data-aos="fade-up" href="#" class="instagram__user-link "> <span
                 class="instagram__user-logo">ashasuperfoods</span> </a>
         <div class="instagram__image-items">
@@ -269,7 +274,7 @@
             </figure>
         </div>
     </section>
-    <footer class="footer"> -->
+    <footer class="footer" id="footer">
         <div class="conteiner">
             <div class="footer-top">
                 <div class="footer-logo">
@@ -310,8 +315,10 @@
                 </nav>
                 <div class="subscription">
                     <h4 class="subscription__title title">Don't miss out!</h4>
-                    <input class="subscription__input" type="mail" placeholder="subscribe to our newsletter">
-                    <img class="subscription__input-icon" src="assets/images/subscribe/letter.png" alt="">
+                    <dv class="input-wrap">
+                        <input class="subscription__input" type="mail" placeholder="subscribe to our newsletter">
+                        <img class="subscription__input-icon" src="assets/images/subscribe/letter.png" alt="">
+                    </dv>
                     <div class="footer-social">
                         <h5 class="footer-social__title">FOLLOW US</h5>
                         <ul class="footer-social__list">

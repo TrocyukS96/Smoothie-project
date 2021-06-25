@@ -96,17 +96,15 @@
 
       &:after {
          content: " ";
-         width: 60px;
-         height: 60px;
-         background: url(/assets/images/products/arrow.png) no-repeat;
+         width: 32px;
+         height: 16px;
+         background: url("../assets/images/products/arrow.png") no-repeat;
          position: absolute;
-         top: 20px;
-         right: 7px;
+         top: 50%;
+         right: 28px;
 
-         @media (max-width: 670px) {
-            top: 14px;
-            right: 4px;
-         }
+         transform: translateY(-50%);
+
       }
 
       @media (max-width: 1027px) {

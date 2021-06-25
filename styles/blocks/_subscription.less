@@ -1,13 +1,5 @@
 // main: ./../main.less
 .subscription {
-   @media(max-width:1027px) {
-      padding: 10px 0px 0px 25px;
-
-   }
-
-   @media(max-width:790px) {
-      text-align: left;
-   }
 
    @media(max-width:420px) {
       padding: 0;
@@ -24,25 +16,24 @@
       padding-bottom: 35px;
       color: rgb(255, 255, 255);
 
-      @media(max-width:1027px) {
+      @media(max-width:850px) {
+         margin-top: 20px;
+         margin-bottom: 10px;
+
+         padding: 0;
+
          font-size: 26px;
-         line-height: 35px;
-         padding: 20px 0 17px 0;
-      }
 
-      @media(max-width:790px) {
-         font-size: 24px;
-         line-height: 14px;
-         padding: 14px 0px 15px 118px;
-      }
-
-      @media(max-width:470px) {
-         font-size: 24px;
+         text-align: center;
       }
 
       @media(max-width:420px) {
-         padding: 8px 0 12px 0px;
+         margin-top: 30px;
       }
+   }
+
+   .input-wrap {
+      position: relative;
    }
 
    &__input {
@@ -68,32 +59,21 @@
          height: 61px;
       }
 
-      @media(max-width:470px) {
-         width: 310px;
-         height: 58px;
-         margin: 0 0 0 40px;
+      @media(max-width:540px) {
+         width: 320px;
       }
 
-      @media(max-width:420px) {
-         width: 248px;
-         height: 50px;
-         margin: 0px 0 0 45px;
-         padding: 0 0 0 50px;
-      }
-
-      @media(max-width:321px) {
-         width: 239px;
-         height: 50px;
-         margin: 0px 0 0 8px;
-         padding: 0 0 0 50px;
+      @media(max-width:400px) {
+         width: 280px;
       }
    }
 
 
    &__input-icon {
-      position: relative;
-      top: 3px;
-      left: -470px;
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      transform: translateY(-50%);
 
       ::-webkit-input-placeholder {
          color: #6d450c;
@@ -116,36 +96,6 @@
          color: #6d450c;
          font-size: 17px;
       }
-
-      @media(max-width:1027px) {
-         left: -416px;
-      }
-
-      @media(max-width:490px) {
-         left: -410px;
-         top: 3px;
-      }
-
-      @media(max-width:490px) {
-         left: 17px;
-         top: -39px;
-      }
-
-
-
-      @media(max-width:470px) {
-         left: -296px;
-         top: 3px;
-      }
-
-      @media(max-width:420px) {
-         left: -239px;
-         top: 5px;
-      }
-
-      @media(max-width:350px) {
-         left: -237px;
-         top: 5px;
-      }
    }
+
 }
