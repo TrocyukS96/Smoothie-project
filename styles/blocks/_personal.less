@@ -22,6 +22,7 @@
 
    &__list-item {
       margin: 0 45px 0 0;
+      transition: all .3s ease-in;
    }
 
    &__list-item--numb {
@@ -36,6 +37,12 @@
 
       @media (max-width: 560px) {
          margin-right: 0;
+      }
+   }
+
+   &__list-item {
+      &:hover {
+         transform: scale(1.1);
       }
    }
 

@@ -15,10 +15,14 @@
    &__list-item {
       padding: 0 20px 0 0;
 
+
+
       @media (max-width: 1300px) {
          padding: 0 0 0 0;
       }
+
    }
+
 
 
 
@@ -31,9 +35,42 @@
       color: #ffffff;
       text-transform: uppercase;
 
+      position: relative;
+      z-index: 2;
+
       @media (max-width: 1024px) {
          font-size: 20px;
       }
+
+
+   }
+
+   &__list-link::before {
+      content: "";
+
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+
+      background-color: #16866b;
+
+      transform: scale(0);
+
+      transition: transform 0.5s ease-in-out;
+   }
+
+   &__list-link:hover:before,
+   &__list-link:focus:before {
+      transform: scale(1);
+   }
+
+   &__list-link:active:before,
+   &__list-link:active:before {
+      background-color: #6c2c1c;
    }
 }
 
